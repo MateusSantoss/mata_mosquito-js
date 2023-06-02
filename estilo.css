@@ -7,7 +7,7 @@ html {
 
 
 body {
-	background-image: url('imagens/bg.jpg');
+	background-image: url('imagens/bg_natureza.jpg');
 	background-size: 100%;
 	
 }
@@ -53,5 +53,11 @@ body {
 	float: left;
 	font-weight: bold;
 	font-size: 20px;
+}
+
+@media (max-width: 800px) {
+	body {
+		background-image: url("imagens/m.webp");
+	}
 }
 

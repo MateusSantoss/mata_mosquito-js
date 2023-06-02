@@ -4,6 +4,8 @@ var vidas = 1
 var tempo = 15
 var dificuldade = 1500
 
+
+
 //função que calcular a altura e a largura do browser
 function calcularAlturaeLargura() {
 	// body...
@@ -11,6 +13,9 @@ function calcularAlturaeLargura() {
 	 largura = window.innerWidth
 
 	console.log(largura, altura)
+	
+
+
 }
 calcularAlturaeLargura()
 
@@ -94,9 +99,13 @@ function posicaoRandomica()  {
 	mosquito.style.position = 'absolute'
 	mosquito.id = 'mosquito'
 	mosquito.onclick= function () {
+		const audio = new Audio ("audios/punch-2-123106.mp3")
+		audio.play()
+		
 
 		this.remove()
 	};
+
 	
 	document.body.appendChild(mosquito)
 
